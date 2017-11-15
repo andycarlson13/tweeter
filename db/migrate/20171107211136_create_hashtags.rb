@@ -1,7 +1,7 @@
 class CreateHashtags < ActiveRecord::Migration[5.1]
   def change
     create_table :hashtags do |t|
-      t.string :tag, index: {unique: true}
+      t.string :tag, index: {unique: false}
 
       t.timestamps
     end
